@@ -1,4 +1,4 @@
-Criando ambiente:
+Criando ambiente utilizando VS Code:
 Instalar ambiente virtual do Python no diretório:
 python -m venv venv
 
@@ -10,4 +10,31 @@ deactivate
 
 Instalação do OpenWebUI:
 docker run -d -p 8080:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+
+
+Versionando e enviando ambiente com o Git e GitHub
+Ativar git na pasta:
+Botão direito do mouse dentro da pasta do projeto "Open Git Bash here"
+Executar comandos:
+Git init
+Git add .
+
+Envio do projeto para GitHub
+Para realizar o Commit é necessário autenticar na plataforma, comando:
+git config --global user.email "fao_kanu@outlook.com"
+git config --global user.name "Flavio Oliveira"
+
+git commit -m "Nome da Versão"
+
+Conectar o Git e GitHub
+git remote add origin "https://github.com/faokanu/Ollama_OpenWebUI"
+
+Criar Branch
+git push --set-upstream origin master
+git push --set
+
+Verificar a atualização da pasta:
+Git status
+Realizar o Commit com as alaterações realizadas para o versonamento:
+Git commit "texto da alteração"
 
