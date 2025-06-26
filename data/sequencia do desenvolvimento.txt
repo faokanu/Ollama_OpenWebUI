@@ -1,0 +1,13 @@
+Criando ambiente:
+Instalar ambiente virtual do Python no diretório:
+python -m venv venv
+
+Ativar ambiente virtual no diretório do projeto:
+.\venv\Scripts\activate
+
+Sair do ambiente virtual:
+deactivate
+
+Instalação do OpenWebUI:
+docker run -d -p 8080:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+
