@@ -1,0 +1,21 @@
+Instalações e Dependências do Projeto
+Dependências Python (instaladas via pip no ambiente virtual)
+pandas
+
+langchain
+
+langchain-community
+
+chromadb
+
+Ollama
+Servidor Ollama (aplicativo instalado diretamente no sistema operacional)
+
+Modelo Ollama mistral (baixado via ollama pull mistral)
+
+Modelo Ollama nomic-embed-text (baixado via ollama pull nomic-embed-text)
+
+OpenWebUI
+Docker Desktop (aplicativo instalado no sistema operacional)
+
+Imagem Docker ghcr.io/open-webui/open-webui:main (executada via comando docker run)
